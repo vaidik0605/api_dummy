@@ -56,6 +56,10 @@ class _DummyState extends State<Dummy> {
           Map m = l[index];
 
           User user = User.fromJson(m);
+
+          return ListTile(
+            title: Text('${user.name}'),
+          );
         },
       ),
     );
